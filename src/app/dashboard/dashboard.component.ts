@@ -88,6 +88,8 @@ export class DashboardComponent implements OnInit {
     this.api.addtocart(email,productId,1).subscribe((data)=>{
       this.carts = data.carts
       this.totalprice = data.total
+
+      alert('product added to the cart')
     })
 
     
